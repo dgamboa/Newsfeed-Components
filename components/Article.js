@@ -2,7 +2,7 @@
 // OPTIONAL: if you're feeling adventurous, try to make this data an export from a different module, and import it here.
 // You can read about ES6 modules here: https://exploringjs.com/es6/ch_modules.html#sec_basics-of-es6-modules
 
-import { data } from '../modules/ArticlesData.js';
+import { data } from '../modules/ArticlesData';
 
 /*
   Step 1: Write a component called 'articleMaker' to create an article.
