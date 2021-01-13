@@ -3,7 +3,6 @@
 // You can read about ES6 modules here: https://exploringjs.com/es6/ch_modules.html#sec_basics-of-es6-modules
 
 import { data } from '../modules/ArticlesData.js';
-console.log(data)
 
 /*
   Step 1: Write a component called 'articleMaker' to create an article.
@@ -30,3 +29,32 @@ console.log(data)
   Step 5: Try adding new article object to the data array. Make sure it is in the same format as the others.
   Refresh the page to see the new article.
 */
+
+function articleMaker(article) {
+  // Build article component
+  const div     = document.createElement('div'),
+        h2      = document.createElement('h2'),
+        dateP   = document.createElement('p'),
+        firstP  = document.createElement('p'),
+        secondP = document.createElement('p'),
+        thirdP  = document.createElement('p'),
+        span    = document.createElement('span');
+
+  h2.textContent = article.title;
+  dateP.textContent = article.date;
+  firstP.textContent = article.firstParagraph;
+  secondP.textContent = article.secondParagraph;
+  thirdP.textContent = article.thirdParagraph;
+  span.textContent = "+";
+  
+  div.classList.add("article");
+  dateP.classList.add("date");
+  span.classList.add("expandButton");
+
+  div.append(h2, dateP, firstP, secondP, thirdP, span);
+
+  // Add event listener to span for article expansion
+  console.log(div);
+}
+
+articleMaker(data[0]);
