@@ -54,7 +54,20 @@ function articleMaker(article) {
   div.append(h2, dateP, firstP, secondP, thirdP, span);
 
   // Add event listener to span for article expansion
-  console.log(div);
+  function expandButtonToggle(e) {
+    div.classList.toggle('article-open');
+  }
+
+  span.addEventListener('click', expandButtonToggle);
+
+  return div;
 }
 
-articleMaker(data[0]);
+// Selector for the container div
+const articlesDiv = document.querySelector('.articles');
+
+// Iterator to create article HTML elements and append them to container div
+data.map(articleData => {
+  const articleElement = articleMaker(articleData);
+  articlesDiv.appendChild(articleElement);
+})
