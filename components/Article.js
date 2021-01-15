@@ -4,6 +4,13 @@
 
 import { data } from '../modules/ArticlesData';
 
+// Learning jQuery
+// $(document).ready( function() {
+//   $(".menu-button").click( function(event) {
+//     alert("Hello!");
+//   });
+// });
+
 /*
   Step 1: Write a component called 'articleMaker' to create an article.
   Your component is a function that takes an article object as its only argument,
@@ -54,8 +61,14 @@ function articleMaker(article) {
   div.append(h2, dateP, firstP, secondP, thirdP, span);
 
   // Add event listener to span for article expansion
+  // Replaced with jQuery animation below
   function expandButtonToggle(e) {
     div.classList.toggle('article-open');
+    if (span.textContent === "\u25b2") {
+      span.textContent = "+";
+    } else {
+      span.textContent = "\u25b2";
+    }
   }
 
   span.addEventListener('click', expandButtonToggle);
@@ -71,3 +84,5 @@ data.map(articleData => {
   const articleElement = articleMaker(articleData);
   articlesDiv.appendChild(articleElement);
 })
+
+gsap.from(".article", {duration: 0.5, opacity: 0, y: 25, stagger: 0.1});

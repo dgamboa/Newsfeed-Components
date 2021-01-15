@@ -51,10 +51,11 @@ function menuMaker(list) {
   // Select the menu button and add a click event listener to open menu
   const menuButton = document.querySelector('.menu-button');
 
-  function openMenu(e) {
-    div.classList.toggle('menu--open');
-  }
-  menuButton.addEventListener('click', openMenu);
+  // Replace open menu functionality here with jQuery animation below
+  // function openMenu(e) {
+  //   div.classList.toggle('menu--open');
+  // }
+  // menuButton.addEventListener('click', openMenu);
 
   return div;
 }
@@ -63,3 +64,9 @@ function menuMaker(list) {
 const menu = menuMaker(menuItems);
 const divHeader = document.querySelector('.header');
 divHeader.appendChild(menu);
+
+// jQuery animation to open the menu
+$(".menu-button").click( function(event) {
+  $(".menu").toggle("fast");
+});
+
