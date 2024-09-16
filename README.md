@@ -13,35 +13,35 @@ In this project we are going to be building a news feed reader. The goal is to h
 
 **Follow these steps to set up and work on your project:**
 
-* [ ] Create a forked copy of this project.
-* [ ] Add your team lead as collaborator on Github.
-* [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-* [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-* [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-* [ ] Push commits: git push origin `<firstName-lastName>`.
+* [x] Create a forked copy of this project.
+* [x] Add your team lead as collaborator on Github.
+* [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+* [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+* [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+* [x] Push commits: git push origin `<firstName-lastName>`.
 
 **Follow these steps for completing your project.**
 
-* [ ] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
+* [x] Submit a Pull-Request to merge `<firstName-lastName>` Branch into `main` (student's Repo). **Please don't merge your own pull request**
 
 ### Launching the project
 
-* [ ] Navigate to the root of the project with your command line.
-* [ ] Run `npm install` to download any dependencies listed in the `package.json` file.
-* [ ] Run `npm start` to compile your project and launch a development server.
-* [ ] Navigate Chrome to the URL indicated in the output of the `npm start` command.
+* [x] Navigate to the root of the project with your command line.
+* [x] Run `npm install` to download any dependencies listed in the `package.json` file.
+* [x] Run `npm start` to compile your project and launch a development server.
+* [x] Navigate Chrome to the URL indicated in the output of the `npm start` command.
 
 ### Part 1: The Articles Component
 
-* Follow the instructions found in the Articles.js file to complete the JavaScript functionality and add the components to the DOM.
+* [x] Follow the instructions found in the Articles.js file to complete the JavaScript functionality and add the components to the DOM.
 
 ### Part 2: Add Articles
 
-* Now that we have our components built, add a few articles of your own to the data array. Notice how our JavaScript code automatically creates the new articles. Write the code once and add as many components as you want all while maintaining the functionality we built!
+* [x] Now that we have our components built, add a few articles of your own to the data array. Notice how our JavaScript code automatically creates the new articles. Write the code once and add as many components as you want all while maintaining the functionality we built!
 
 ### Part 3: The Menu
 
-* Follow the instructions found in the Menu.js file to complete the JavaScript functionality.
+* [x] Follow the instructions found in the Menu.js file to complete the JavaScript functionality.
 
 ### Stretch Goals
 
@@ -56,12 +56,12 @@ A few things to check out:
 
 #### jQuery
 
-* jQuery used to be an extremely popular JavaScript library, in fact most of the native DOM manipulation we know and love, came from the jQuery library. It is worth getting a little familiar with it. The jQuery library is massive, and part of it is an animation library. jQuery gives us a fantastic method called `.animate()`. There are also simpler methods such as `slideDown` `slideUp`, `slideToggle`, `show`, `hide` and more.
+* [x] jQuery used to be an extremely popular JavaScript library, in fact most of the native DOM manipulation we know and love, came from the jQuery library. It is worth getting a little familiar with it. The jQuery library is massive, and part of it is an animation library. jQuery gives us a fantastic method called `.animate()`. There are also simpler methods such as `slideDown` `slideUp`, `slideToggle`, `show`, `hide` and more.
 * http://www.jquery.com
 
 #### GSAP
 
-* Greensock Animation Platform, is by far the most powerful of the three. It is intuitive and easy to use, and you will be amazed at the results.
+* [x] Greensock Animation Platform, is by far the most powerful of the three. It is intuitive and easy to use, and you will be amazed at the results.
 * https://greensock.com/gsap
 
 Note: Just a reminder the stretch goals are just extra practice using the tools we have learned. These are not required. Only parts 1-3 are required portions of the project. If you do not get to the stretch goals, don't worry.
